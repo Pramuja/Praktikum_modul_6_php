@@ -36,8 +36,9 @@
         $nis = $_POST['nis'];
         $nama = $_POST['nama'];
         $alamat = $_POST['alamat'];
+        $password = $_POST['password'];
     // tambahkan data baru ke tabel
-        $sql = "INSERT INTO tb_siswa VALUES ('" .$nis. "','" .$nama. "','" .$alamat. "')";
+        $sql = "INSERT INTO tb_siswa VALUES ('" .$nis. "','" .$nama. "','" .$alamat. "','" .$password. "')";
         $result = mysqli_query($connect, $sql);
         if($result){
             echo 'Data Berhasil Ditambahkan';
